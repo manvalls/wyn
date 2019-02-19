@@ -1,0 +1,39 @@
+{
+  "name": "wframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/wframe.cjs.js",
+  "module": "./dist/wframe.esm.js",
+  "unpkg": "./dist/wframe.min.js",
+  "dependencies": {
+    "jwit": "^9.0.0",
+    "jwookie": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "eslint": "^5.5.0",
+    "npm-run-all": "^4.1.3",
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^4.0.2",
+    "rollup-plugin-gzip": "^2.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^5.0.2"
+  },
+  "scripts": {
+    "prepare:cjs": "rollup -c rollup.cjs.config.js",
+    "prepare:esm": "rollup -c rollup.esm.config.js",
+    "prepare:min": "rollup -c rollup.min.config.js",
+    "prepare": "npm run lint && run-p prepare:*",
+    "lint": "eslint src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manvalls/wframe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manvalls/wframe/issues"
+  },
+  "author": "Manuel Valls Fernández <manolo@vlrz.es>",
+  "license": "Apache-2.0"
+}
