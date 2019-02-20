@@ -6,7 +6,7 @@
   "module": "./dist/wframe.esm.js",
   "unpkg": "./dist/wframe.min.js",
   "dependencies": {
-    "jwit": "^9.0.0",
+    "jwit": "^9.0.1",
     "jwookie": "^8.0.0"
   },
   "devDependencies": {
