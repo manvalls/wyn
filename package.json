@@ -7,7 +7,7 @@
   "unpkg": "./dist/wframe.min.js",
   "dependencies": {
     "jwit": "^9.0.2",
-    "jwookie": "^8.0.0"
+    "jwookie": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
