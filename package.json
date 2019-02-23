@@ -1,10 +1,10 @@
 {
-  "name": "wframe",
-  "version": "2.0.0",
+  "name": "wyn",
+  "version": "0.1.0",
   "description": "",
-  "main": "./dist/wframe.cjs.js",
-  "module": "./dist/wframe.esm.js",
-  "unpkg": "./dist/wframe.min.js",
+  "main": "./dist/wyn.cjs.js",
+  "module": "./dist/wyn.esm.js",
+  "unpkg": "./dist/wyn.min.js",
   "dependencies": {
     "jwit": "^9.0.2",
     "jwookie": "^9.0.0"
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/manvalls/wframe.git"
+    "url": "git://github.com/manvalls/wyn.git"
   },
   "bugs": {
-    "url": "https://github.com/manvalls/wframe/issues"
+    "url": "https://github.com/manvalls/wyn/issues"
   },
   "author": "Manuel Valls Fernández <manolo@vlrz.es>",
   "license": "Apache-2.0"
