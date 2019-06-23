@@ -6,8 +6,8 @@
   "module": "./dist/wyn.esm.js",
   "unpkg": "./dist/wyn.min.js",
   "dependencies": {
-    "jwit": "^9.0.2",
-    "jwookie": "^9.0.0"
+    "jwit": "^10.0.0",
+    "jwookie": "^10.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
