@@ -1,6 +1,6 @@
 {
   "name": "wyn",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/wyn.cjs.js",
   "module": "./dist/wyn.esm.js",
