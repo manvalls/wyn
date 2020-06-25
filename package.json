@@ -4,27 +4,24 @@
   "description": "",
   "main": "./dist/wyn.cjs.js",
   "module": "./dist/wyn.esm.js",
-  "unpkg": "./dist/wyn.min.js",
+  "es": "./dist/wyn.es.js",
+  "unpkg": "./dist/wyn.min.es.js",
   "dependencies": {
-    "jwit": "^10.0.0",
-    "jwookie": "^10.0.0"
+    "jwookie": "^11.0.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "eslint": "^5.5.0",
+    "@vlrz/eslint-config": "^1.1.1",
+    "@vlrz/rollup-config": "^1.0.2",
+    "eslint": "^6.8.0",
     "npm-run-all": "^4.1.3",
-    "rollup": "^0.65.0",
-    "rollup-plugin-babel": "^4.0.2",
-    "rollup-plugin-gzip": "^2.0.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-uglify": "^5.0.2"
+    "rollup": "^1.29.1"
   },
   "scripts": {
-    "prepare:cjs": "rollup -c rollup.cjs.config.js",
-    "prepare:esm": "rollup -c rollup.esm.config.js",
-    "prepare:min": "rollup -c rollup.min.config.js",
-    "prepare": "npm run lint && run-p prepare:*",
+    "prepare:cjs": "TARGET=cjs rollup -c rollup.config.js",
+    "prepare:esm": "TARGET=esm rollup -c rollup.config.js",
+    "prepare:es.min": "TARGET=es.min rollup -c rollup.config.js",
+    "prepare:min": "TARGET=min rollup -c rollup.config.js",
+    "prepare": "run-p prepare:*",
     "lint": "eslint src/**"
   },
   "repository": {

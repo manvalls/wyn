@@ -1,5 +1,3 @@
-import { init as initWit } from 'jwit'
-import { init as initWookie } from 'jwookie'
+import { registerWookie } from 'jwookie'
 
-initWit();
-initWookie();
+registerWookie()

@@ -1,13 +1,3 @@
 {
-  "rules": {
-    "no-undef": "error",
-    "no-unused-vars": "error"
-  },
-  "parserOptions": {
-    "ecmaVersion": 7,
-    "sourceType": "module"
-  },
-  "env": {
-    "browser": true
-  }
+  "extends": "@vlrz/eslint-config"
 }
